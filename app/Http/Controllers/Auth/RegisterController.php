@@ -75,7 +75,7 @@ class RegisterController extends Controller
              'country' =>'??',
              'city' =>'??',
          ] , $user->id);
-         $user->image->save(Image::saveImage());
+         $user->image()->save(Image::saveImage());
          return $user;
     }
 }
